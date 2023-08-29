@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addPost } from "../actions/post.action";
+import { addPost, getPosts } from "../actions/post.action";
 
 const PostForm = () => {
   const form = useRef();
@@ -10,7 +10,7 @@ const PostForm = () => {
   const handleform = async (e) => {
     e.preventDefault();
 
-    console.log(form);
+    //console.log(form);
 
     const postData = {
       author: user.pseudo,
@@ -19,7 +19,9 @@ const PostForm = () => {
       likes: 0,
     };
 
-    dispatch(addPost(postData));
+    await dispatch(addPost(postData));
+    dispatch(getPosts());
+    form.current.reset();
   };
 
   return (
