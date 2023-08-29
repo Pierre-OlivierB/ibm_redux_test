@@ -22,11 +22,11 @@
       "id": "3"
     },
     {
-      "author": "user42",
       "title": "TestArticle",
+      "author": "user42",
       "content": "Testcontent ! go !",
-      "likes": 0,
-      "id": "HX9mB9f"
+      "id": "HX9mB9f",
+      "likes": 1
     }
   ],
   "user": [
