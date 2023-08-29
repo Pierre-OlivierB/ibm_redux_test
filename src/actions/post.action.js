@@ -4,8 +4,9 @@ export const GET_POSTS = "GET_POSTS";
 
 export const getPosts = () => {
   return (dispatch) => {
-    return axios
-      .get("http://localhost:3000/posts")
-      .then((res) => console.log(res.data));
+    return axios.get("http://localhost:3000/posts").then((res) => {
+      // console.log(res.data)
+      dispatch({ type: GET_POSTS, payload: res.data });
+    });
   };
 };
