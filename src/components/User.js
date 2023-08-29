@@ -13,7 +13,7 @@ const User = () => {
         <img src="./img/bill-gates.png" alt="bill gates" />
         <p>Age : {!isEmpty(user) && user.age} ans</p>
         <p>
-          Like{!isEmpty(user) && user.like > 1 ? "s" : null} :{" "}
+          Like{!isEmpty(user) && user.likes > 1 ? "s" : null} :{" "}
           {!isEmpty(user) && user.likes}
         </p>
       </div>
