@@ -27,13 +27,6 @@
       "content": "Testcontent ! go !",
       "likes": 0,
       "id": "HX9mB9f"
-    },
-    {
-      "author": "user42",
-      "title": "Titre 2",
-      "content": "Encore un post test.",
-      "likes": 0,
-      "id": "QKljQ0R"
     }
   ],
   "user": [

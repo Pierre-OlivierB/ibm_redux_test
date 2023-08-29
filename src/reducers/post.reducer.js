@@ -1,4 +1,9 @@
-import { ADD_POST, EDIT_POST, GET_POSTS } from "../actions/post.action";
+import {
+  ADD_POST,
+  DELETE_POST,
+  EDIT_POST,
+  GET_POSTS,
+} from "../actions/post.action";
 
 const initialState = {};
 
@@ -17,6 +22,8 @@ export default function postReducer(state = initialState, action) {
           return post;
         }
       });
+    case DELETE_POST:
+      return state.filter((post) => post.id !== action.payload);
     default:
       return state;
   }
